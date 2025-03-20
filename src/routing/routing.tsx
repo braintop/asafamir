@@ -3,13 +3,13 @@ import App from "../App";
 import { Home } from "../pages/Home/Home";
 import { About } from "../pages/About/About";
 import { Projects } from "../pages/Projects/Projects";
-import { Recomended } from "../pages/Recomended/Recomended";
+import { Recommended } from "../pages/Recommended/Recommended";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
-    children: [
+        children: [
             {
                 path: "/",
                 element: <Home />,
@@ -23,8 +23,9 @@ export const router = createBrowserRouter([
                 element: <Projects />,
             },
             {
-                path: "/recomended",
-                element: <Recomended />,
+                path: "/recommended",
+                element: <Recommended />
+                ,
             },
         ],
     },
