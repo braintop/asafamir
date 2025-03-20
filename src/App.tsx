@@ -17,7 +17,7 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 0, mr: 4 }}>
-            AsafAmir
+            BrainTop
           </Typography>
           <Box sx={{ flexGrow: 1, display: 'flex', gap: 2 }}>
             {navItems.map((item) => (
@@ -34,6 +34,27 @@ function App() {
                 {item.label}
               </Button>
             ))}
+          </Box>
+          {/* Auth buttons aligned to the right */}
+          <Box sx={{ display: 'flex', gap: 2 }}>
+            <Button
+              component={Link}
+              to="/register"
+              color="inherit"
+              variant="outlined"
+              sx={{ textTransform: 'none' }}
+            >
+              Register
+            </Button>
+            <Button
+              component={Link}
+              to="/login"
+              color="inherit"
+              variant="outlined"
+              sx={{ textTransform: 'none' }}
+            >
+              Login
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
