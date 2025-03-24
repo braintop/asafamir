@@ -1,4 +1,4 @@
 import "./Home.module.css"
-export  function Home() {
-  return <div>Home</div>;
+export function Home() {
+  return <div>Aaron</div>;
 }
